@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{07B82700-244C-4834-BDC9-34D1900B3493}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Kimchi</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Dao.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EntityWithAssociations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Kimchi.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SQLiteAsyncConnectionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SQLiteConnectionWrapper.cs" />
+  </ItemGroup>
+</Project>
